@@ -4,7 +4,7 @@
 #include <iomanip>
 #include <cstring>
 #include <vector>
-
+using namespace std;
 typedef unsigned char uint8;
 typedef unsigned long long uint64;
 
@@ -83,7 +83,7 @@ inline uint64 sigma1(uint64 x) {
     return rotr(x, 19) ^ rotr(x, 61) ^ shr(x, 6);
 }
 
-std::string sha512(const std::string& message) {
+string sha512(const string& message) {
     uint64 h[] = {
             0x6a09e667f3bcc908ULL, 0xbb67ae8584caa73bULL,
             0x3c6ef372fe94f82bULL, 0xa54ff53a5f1d36f1ULL,
@@ -91,7 +91,7 @@ std::string sha512(const std::string& message) {
             0x1f83d9abfb41bd6bULL, 0x5be0cd19137e2179ULL
     };
 
-    std::vector<uint8> data(message.begin(), message.end());
+    vector<uint8> data(message.begin(), message.end());
     data.push_back(0x80);
     while ((data.size() + 16) % 128 != 0) {
         data.push_back(0);
@@ -134,20 +134,20 @@ std::string sha512(const std::string& message) {
         h[4] += e; h[5] += f; h[6] += g; h[7] += h_;
     }
 
-    std::stringstream ss;
+    stringstream ss;
     for (int i = 0; i < 8; ++i) {
-        ss << std::hex << std::setfill('0') << std::setw(16) << h[i];
+        ss << hex << setfill('0') << setw(16) << h[i];
     }
     return ss.str();
 }
 
 int main() {
-    std::string input;
-    std::cout << "please enter password or text:\n> ";
-    std::getline(std::cin, input);
+    string input;
+    cout << "please enter password or text:\n> ";
+    getline(cin, input);
 
-    std::string hash = sha512(input);
-    std::cout << "\n SHA-512:\n" << hash << std::endl;
+    string hash = sha512(input);
+    cout << "\n SHA-512:\n" << hash << endl;
 
     return 0;
 }

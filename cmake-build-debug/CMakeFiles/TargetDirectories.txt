@@ -1,3 +1,3 @@
-C:/Users/Asus/Desktop/sha512 hash/cmake-build-debug/CMakeFiles/sha512_hash.dir
-C:/Users/Asus/Desktop/sha512 hash/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Asus/Desktop/sha512 hash/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Asus/Desktop/مبانی کامپیوتر/sha512 hash/cmake-build-debug/CMakeFiles/sha512_hash.dir
+C:/Users/Asus/Desktop/مبانی کامپیوتر/sha512 hash/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Asus/Desktop/مبانی کامپیوتر/sha512 hash/cmake-build-debug/CMakeFiles/rebuild_cache.dir
