@@ -147,7 +147,7 @@ int main() {
     getline(cin, input);
 
     string hash = sha512(input);
-    cout << "\n SHA-512:\n" << hash << endl;
+    cout << "\n SHA-512 hash is :\n" << hash << endl;
 
     return 0;
 }
