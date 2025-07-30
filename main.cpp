@@ -8,6 +8,7 @@ using namespace std;
 typedef unsigned char uint8;
 typedef unsigned long long uint64;
 
+
 const uint64 K[] = {
         0x428a2f98d728ae22ULL, 0x7137449123ef65cdULL,
         0xb5c0fbcfec4d3b2fULL, 0xe9b5dba58189dbbcULL,
