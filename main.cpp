@@ -145,7 +145,7 @@ string sha512(const string& message) {
 
 int main() {
     string input;
-    cout << "please enter password or text that you want to hashing here:\n> ";
+    cout << "please enter password or text that you want to hashing here :\n> ";
     getline(cin, input);
 
     string hash = sha512(input);
