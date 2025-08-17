@@ -12,23 +12,6 @@ Perfect for **learning how SHA-512 works end-to-end**.
 - 🔄 Full **SHA-512 padding, 1024-bit blocks, 80-round compression** with constants `K`.  
 - 🖥 **Simple CLI**: input text → get 128-char SHA-512 hex digest.  
 
----
-
-## ▶️ Usage
-
-./sha512
-please enter password or text that you want to hashing here :
-> abc
-# output:
-# SHA-512 hash is :
-# ddaf35a193617abacc417349ae20413112e6fa4e89a97ea20a9eeee64b55d39a
-# 2192992a274fc1a836ba3c23a3feebbd454d4423643ce80e2a9ac94fa54ca49f
-
-## 🧠 How it works (high level)
-- ✍ Converts input → bytes, applies **SHA-512 padding** (`0x80`, zeros, 128-bit length).  
-- 📦 Splits into **1024-bit chunks** → expands to 80 words.  
-- 🔁 Runs compression rounds with `Ch`, `Maj`, `Σ0/Σ1`, `σ0/σ1`, and constants `K`.  
-- 🧮 Accumulates state (**8×64-bit**) → prints **512-bit digest** as hex.  
 
 ---
 
