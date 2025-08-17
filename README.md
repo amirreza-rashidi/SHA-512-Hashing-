@@ -14,7 +14,13 @@ Perfect for **learning how SHA-512 works end-to-end**.
 
 
 ---
+## 🧠 How it works (high level)
+- ✍ Converts input → bytes, applies **SHA-512 padding** (`0x80`, zeros, 128-bit length).  
+- 📦 Splits into **1024-bit chunks** → expands to 80 words.  
+- 🔁 Runs compression rounds with `Ch`, `Maj`, `Σ0/Σ1`, `σ0/σ1`, and constants `K`.  
+- 🧮 Accumulates state (**8×64-bit**) → prints **512-bit digest** as hex.  
 
+---
 ## ✅ Known Test Vector
 - Input: `abc`  
 - Output:  
