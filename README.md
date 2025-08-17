@@ -15,7 +15,7 @@ Perfect for **learning how SHA-512 works end-to-end**.
 ---
 
 ## ▶️ Usage
-```bash
+
 ./sha512
 please enter password or text that you want to hashing here :
 > abc
