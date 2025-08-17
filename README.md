@@ -80,7 +80,11 @@ ddaf35a193617abacc417349ae20413112e6fa4e89a97ea20a9eeee64b55d39a2192992a274fc1a8
 
 (Matches program output above.)
 
+⚠️ Security Notes
 
+
+
+This code is primarily for learning. It does not implement constant-time I/O or side-channel mitigations and hasn’t undergone formal cryptographic review. Don’t use it as-is to protect real secrets.
 
 
 
