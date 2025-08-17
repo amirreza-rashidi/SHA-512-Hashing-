@@ -48,17 +48,25 @@ please enter password or text that you want to hashing here :
 
 
 
-🧠 How it works (high level)
+✅ Known Test Vector
 
 
 
-Converts input to bytes, applies SHA-512 padding (append 0x80, then zeros, then 128-bit length).
+Input: abc
 
 
 
-Processes 1024-bit chunks: expands to 80 words, then runs the compression rounds using Ch, Maj, Σ0/Σ1, σ0/σ1, and the 80 constants K.
+SHA-512:
+
+ddaf35a193617abacc417349ae20413112e6fa4e89a97ea20a9eeee64b55d39a2192992a274fc1a836ba3c23a3feebbd454d4423643ce80e2a9ac94fa54ca49f
 
 
 
-Accumulates state (8×64-bit) and prints the final 512-bit digest as hex.
+(Matches program output above.)
+
+
+
+
+
+
 
