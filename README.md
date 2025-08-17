@@ -48,6 +48,22 @@ please enter password or text that you want to hashing here :
 
 
 
+🧠 How it works (high level)
+
+
+
+Converts input to bytes, applies SHA-512 padding (append 0x80, then zeros, then 128-bit length).
+
+
+
+Processes 1024-bit chunks: expands to 80 words, then runs the compression rounds using Ch, Maj, Σ0/Σ1, σ0/σ1, and the 80 constants K.
+
+
+
+Accumulates state (8×64-bit) and prints the final 512-bit digest as hex.
+
+
+
 ✅ Known Test Vector
 
 
